@@ -9,6 +9,8 @@ from the calculation of BMI is used to categorize whether
 a person is underweight, normal weight, overweight, 
 or obese depending on what range the value falls between. 
 
+#Screenshot
+![](https://github.com/prafull-tripathi/Android-Development/blob/main/BMICalculator/image/image1.png)
 
 ## Support
 
