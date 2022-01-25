@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+<!--    android:background="@drawable/bmicalci">-->
+<!--    android:background="@color/lPink"-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@drawable/bmicalci" />
+
+    <RelativeLayout
+        android:id="@+id/topRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txtHeight"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#ddffffff"
+            android:text="Height"
+            android:textAlignment="center"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtWeight"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtHeight"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Weight"
+            android:textAlignment="center"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/htEdText"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/txtHeight"
+            android:hint="cm">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/wtEdText"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtHeight"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtWeight"
+            android:hint="kg">
+
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middleRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topRelLayout"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Calculate BMI"
+            android:id="@+id/btnCalBMI"
+            android:onClick="onBtnCLick"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lowLayout"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/middleRelLayout">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="Result"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/image1"
+            android:layout_below="@+id/txtResult"
+            android:src="@drawable/image1"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/image2"
+            android:layout_below="@+id/txtResult"
+            android:src="@drawable/image2"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/image3"
+            android:layout_below="@+id/txtResult"
+            android:src="@drawable/image4"
+            android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
