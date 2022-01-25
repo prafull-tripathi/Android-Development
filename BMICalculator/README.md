@@ -16,6 +16,10 @@ or obese depending on what range the value falls between.
 ![](https://github.com/prafull-tripathi/Android-Development/blob/main/BMICalculator/image/image3.png)
 ![](https://github.com/prafull-tripathi/Android-Development/blob/main/BMICalculator/image/image4.png)
 
+After clicking on the images it will take the user to the webpage 
+(link provided in the image), so 
+user will have clear vision how he/she can maintain their BMI
+
 ## Support
 
 For support, email prafull5tripathi@gmail.com.
