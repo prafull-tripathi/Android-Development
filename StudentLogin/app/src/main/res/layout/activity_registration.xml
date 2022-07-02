@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:id="@+id/txtusername1"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/txtpassword1"
+        android:layout_width="212dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/txtusername1"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/txtRepassword"
+        android:layout_width="219dp"
+        android:layout_height="52dp"
+        android:hint="@string/repassword"
+        android:inputType="textPassword"
+        android:layout_below="@id/txtpassword1"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/txtRepassword"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnsignUp"/>
+
+
+</RelativeLayout>

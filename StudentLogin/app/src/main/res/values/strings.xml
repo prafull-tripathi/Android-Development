@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Student Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+    <string name="username" />
+    <string name="repassword">Repassword</string>
+</resources>
